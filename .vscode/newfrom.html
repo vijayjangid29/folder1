@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        h1 {
+            text-align: center;
+            font-size: 50px;
+            font-style: italic; /* Corrected property name */
+            color: cadetblue;
+        }
+
+        p {
+            font-size: larger;
+            text-align: center;
+            color: cadetblue;
+        }
+
+        fieldset {
+            margin: 20px;
+            padding: 20px;
+            border: 2px solid chocolate;
+            text-align: center;
+        }
+
+        legend {
+            font-size: larger;
+            color: chocolate;
+        }
+
+        label {
+            font-size: larger;
+            color: darkblue;
+            margin-left: auto;
+            margin: auto;
+        }
+
+        input, textarea  {
+            color: darkblue;
+            border: 1px solid darkblue;
+            border-top: 0;
+            border-bottom: 2px solid darkblue;
+            border-left: 0px;
+            border-right: 0px;
+            font-size: larger;
+            margin-left: 40px;
+            padding: 10px;
+            width: 250px; /* Set a consistent width for input and textarea */
+        }
+        td{
+            margin-left: 100px;
+        }
+        section{
+            border: 2px solid darkblue;
+            border-bottom: 1px darkblue;
+            border-top: 0px;
+            border-left: 0px;
+            border-right: 0px;
+            font-size: larger;
+        }
+        fieldset{
+        
+            width: 1100px;
+            margin-left: 80px;
+            margin-right: 80px;
+        }
+    </style>
+    <title>Employee Information Form</title>
+</head>
+<body>
+    <main>
+        <h1>Vijay Company</h1>
+        <p>Employee Information Form</p>
+
+        <form>
+        <fieldset>
+            <fieldset>
+                <legend>Employee Information Form</legend>
+                <p>Personal Information</p>
+                <div>
+                        <label style="margin-left: 0px;" for="firstName">Name:</label>
+                        <input style="width: 200px;" type="text" id="firstName" placeholder="First Name" name="nm" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp; <input type="text" style="width: 200px;" id="lastName" placeholder="Last Name " name="lastName" required>
+                    </div>
+                    <div>
+                        <label for="address">Address:</label>
+                        <textarea style="width: 520px;" id="address" cols="60" rows="1" placeholder="Address" required name="addresh"></textarea>
+                    </div>
+                <div>
+                        <label for="phone">Phone:</label>
+                        <input type="text" id="phone" placeholder="Phone" style="width: 500px;" required name="phoneno" maxlength="10" minlength="10"></td>
+                    </div>
+            
+                    
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" placeholder="Email" style="width: 500px;"required name="email"><br>
+                             
+                        <br>
+                <div>
+                    <label for="date">Birth date:</label>
+                    <input type="date" id="date" style="width: 160px;"required name="DOF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                    <label for="maritalStatus">Marital Status:</label>
+                    <select id="maritalStatus" style="width: 180px; margin-bottom: 5px; " required name="Status">
+                        <option value="Married">Married</option>
+                        <option value="Unmarried">Unmarried</option>
+                    </select>
+
+                    <div>
+                        <br><br>
+                        &nbsp;&nbsp;&nbsp;<label style="margin-left: -50px;" for=""> Gender :</label> <input style="margin-right: -80px;" type="radio" name="Gender" value="male" id="r1"> <label for="r1"> Male</label>
+                        <input type="radio"value="female" name="Gender" id="r2" style="margin-right: -80px;"> <label  for="r2">Female</label>
+                      
+                    </div>
+                    <div>
+                        <br>
+                        <br>
+                        <label for="">Hobbies : </label> 
+                        <input style="margin-right: -215px;" type="checkbox" name="hob" id="c1"><label for="c1">Playing</label>
+                        <input type="checkbox" name="hob" style="margin-right: -215px;" id="c2"><label for="c2">Reading</label>
+                        <input type="checkbox" name="hob" style="margin-right: -215px;"id="c3"><label for="c3">Gamming</label>
+                        <input type="checkbox" style="margin-right: -215px;" name="hob" id="c4"><label for="c4">Writing</label>
+                    </div>
+                </fieldset>
+       <fieldset>
+        <legend>Job's Information</legend>
+    </div>
+    <p style="font-size: larger;" >Job's Information</p>
+    <br>
+    <br>
+    <div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <label for="">Title :</label><input required style="width: 180px;" type="text" name="title" value="Web developer" name="Job" readonly >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;  <label for="EmpId">Employee Id:</label> <input required style="width: 180px;" type="text" name="EmpId" id="EmpId" maxlength="10" minlength="6" name="EmpId">
+    </div>
+    <div>
+        <label for="sup">Supervisor :</label><input required style="width: 180px;" type="text" name="title"  id="sup"  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="dept">Deparment No:</label> <input required style="width: 180px;" type="text" name="deptno" id="dept"  minlength="2">
+    </div>
+<div>
+  <!---  <p style="font-size:x-large;" > Location <samp  style="margin-left: 330px; font-size:x-large; color:cadetblue;"> Email</samp> </p>-->
+</div>
+<div>
+    <label for="sup">Work Phone:</label><input required style="width: 180px;" type="text" name="workno" value="" id="sup"  maxlength="10"
+    minlength="10" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <label for="dept">Cell Phone:</label> <input  required style="width: 180px;" type="text" name="cellno" id="dept"  maxlength="10"  minlength="6">
+</div>
+<div>
+    <label for="sdate">Start Date:</label><input style="width: 180px;" type="date" name="sdate" value="2023-12-10" id="sdate"  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <label for="dept">Salary:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  <input style="width: 180px;" type="text" name="" id="dept"  minlength="2">
+<div>
+    <div>
+        <br><br>
+        <label style="margin-left: -90px;" for=""> Gender :</label> <input style="margin-right: -80px;" type="radio" name="Gender" value="male" id="r4"> <label for="r4"> Male</label>
+        <input type="radio"value="female" name="Gender" id="r3" style="margin-right: -80px;"> <label  for="r3">Female</label>
+      
+    </div>
+
+       </fieldset>
+       <input type="submit" value="sumbit"  > <input type="reset" name="" id=""> 
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>
