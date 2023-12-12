@@ -1,210 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>School form</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="devp.jpg" type="image/jpeg">
     <style>
-        body {
-            background-color: cornflowerblue;
+        body{
+            background-image:url("dev2.avif");
+            background-repeat: no-repeat;
+            background-size: cover;
         }
-        h1 {
+        p{
+            font-size: 50px;
             text-align: center;
-            font-size: 45px;
+            color: rgba(255, 0,0, 0.4   ) ;
         }
-        .text1 {
-            margin-left: 90px;
+        table{
+            /*margin-left: 100px;*/
+            padding: 50px;
+            border-width: 1px;
+            margin-left: 460px;
+            border: salmon solid ;
+            border-style: dashed;
+        }
+        tr{
             font-size: x-large;
         }
-        .l1 {
-            margin-left: 100px;
-            font-size: x-large;
+        th{
+            padding-right: 50px;
         }
-        
-        #d1
-        {
-            
-            margin-left: 200px;
-            font-size: x-large;
+        td{
+            padding-right: 50px;
         }
-        .text2 {
-            margin-left: 105px;
-            font-size: x-large;}
-            .text3 {
-            margin-left: 40px;
-            font-size: x-large;}
-    .rad1{
-        font-size: x-large;
-        margin-left: 10px;
-    }
-    .rad{
-        margin-left:150px ;
-        margin-right: 1px;
-    }
-    #area1{
-        margin-left: 100px; 
-        width: 300px;
-    }
-    .text4{
-        margin-left: 115px;
-        font-size: x-large;
-        width: 300px;
-    }
-    .text5{
-        margin-left: 155px;
-        font-size: x-large;
-        width: 300px;
-    }
-    table{
-        margin-left: 350px;
-        border: 0px;
-    }
-    th{
-         width: 250px;
-        font-size: 21px;
-    }
-    td{
-        font-size: 19px;
-        border: 2px;
-        
-    }
-    table.input{
-    font-size: large;
-    }
     </style>
+    <title>Projects</title>
 </head>
 <body>
-    <a style="font-size: xx-large;" href="newfrom.html"> new Form</a>
-    <h1>School Registration Form</h1>
-    <br><br>
-    <form action="firstproj.html" method="get">
-
-        <div>
-            <label for="t1" class="l1">First Name:</label>
-            <input type="text" placeholder="First Name" id="t1" class="text1" name="fname" maxlength="30">
-            <label for="t2" class="l1">Last Name:</label>
-            <input type="text" placeholder="Last Name" id="t2" class="text1" name="lastname" maxlength="30">
-        </div>
-        <br>
-        <div>
-            <br>
-            <label for="d1" class="l1">Date of Birth:</label>
-            <input type="date" name="dob" id="d1"  value="2023-12-08" required>
-        </div>
-        <br><br>
-        <div>
-            <label for="e1" id="l1" class="l1">Email ID :</label>
-            <input type="email" name="" id="e1" class="text2" required value="" placeholder="abc@abc.abc" > 
-     
-                <label for="p1" id="l1" class="l1">Phone Number :</label>
-                <input type="number
-                " name="" id="p1" class="text3" required value="" placeholder="xxx xxxx xxx" maxlength="10" minlength="10" > 
-        
-        </div>
-        <br><br>
-        <div>
-            <label for="" class="l1"> Gender :</label>
-            <input type="radio" name="r1" id="r1" value="Male" class="rad" ><label for="r1" class="rad1"> Male</label>
-            <input type="radio" name="r1" id="r" value="female" class="" ><label for="r" class="rad1"> Female</label>
-            <input type="radio" name="r1" id="r2" value="Other" class="" ><label for="r2" class="rad1"> other</label>
-        </div>
-        <br><br>
-        <div>
-            <label for="area1" class="l1">Addresh :</label> <textarea name="" id="area1"  cols="30" rows="10" ></textarea>
-        </div>
-        <br><br><div>
-            <label for="c1" class="l1">Country</label> <input type="text" id="c1" class="text4" required value="India" readonly name="Country" maxlength="30" >
-            <label for="s1" class="l1">state</label> <input type="text" id="s1" class="text5" required value="Maharastra" readonly name="state" maxlength="30"  >
-        </div>
-    </div>
-    <br><br><div>
-        <label for="cty1" class="l1">City</label> <input type="text" id="cty1" class="text5" required value=""  name="City" placeholder="city" maxlength="30" >
-    <label for="pin &nbsp;" class="l1">Pin</label> <input type="text" id="pin" class="text5" required value="" placeholder="pincode"  name="pin" maxlength="30"  >
-    </div>
-    <br><br>
-    <div>
-        <label for="" class="l1"> Hobbies :</label>
-        <input type="checkbox" name="Hobbies" value="Drawing" id="check1" class="rad"><label for="check1" class="rad1"> Drawing &nbsp;&nbsp;&nbsp;</label>
-        <input type="checkbox" name="Hobbies" value="singing" id="check2" > <label class="rad1" for="check2">Singing</label>
-        <input type="checkbox" name="Hobbies" value="Dancing" id="check3" class="rad"><label for="check3" class="rad1"> Dancing &nbsp;&nbsp;&nbsp;</label>
-        <input type="checkbox" name="Hobbies" value="Sketching" id="check4" > <label class="rad1" for="check4">Sketching&nbsp;&nbsp;&nbsp;</label>
-    
-    </div>
-    <br><br>
-    <label for="" class="l1">Qualification :</label>
-    <div>
-        <table>
-            <tr>
-            <th >
-                Sl.no.Examination &nbsp;&nbsp;
-            </th>
-            <th >
-                Board &nbsp;&nbsp;
-            </th>
-            <th >
-                percentage &nbsp;&nbsp;
-            </th>
-            <th >
-                year of passing &nbsp;&nbsp;
-            </th>
-        </tr>
-        <br>
+    <p > !--- All the Projects ---! </p>
+    <table>
         <tr>
-            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1 &nbsp;&nbsp;class X  </td>
-            <td><input style="font-size: large;"  type="text"></td>
-            <td><input style="font-size: large;"  type="text"></td>
-            <td><input style="font-size: large;"  type="text"></td>
-            
+            <th>Sr.no</th>
+            <th> Name </th>
+            <th> Link</th>
         </tr>
         <tr>
-            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2 &nbsp;&nbsp;class XII  </td>
-            <td><input style="font-size: large;"  type="text"></td>
-            <td><input style="font-size: large;"  type="text"></td>
-            <td><input style="font-size: large;"  type="text"></td>
-            
+            <td>1</td>
+            <td> WCFirstProject</td>
+            <td><a href="./project1of2.htm">W3c project </a> </td>
         </tr>
         <tr>
-            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3 &nbsp;&nbsp;Graduation  </td>
-            <td><input style="font-size: large;"  type="text"></td>
-            <td><input style="font-size: large;"  type="text"></td>
-            <td><input style="font-size: large;"  type="text"></td>
-            
+            <td>2</td>
+            <td>Resume</td>
+            <td><a href="./resu.html"> Resume</a></td>
         </tr>
         <tr>
-            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4 &nbsp;&nbsp;Masters  </td>
-            <td><input style="font-size: large;"  type="text"></td>
-            <td><input style="font-size: large;"  type="text"></td>
-            <td><input style="font-size: large;"  type="text"></td>
-            
+            <td>3</td>
+            <td>Form</td>
+            <td> <a href="newfrom.html">Form project</a></td>
         </tr>
-        </table>
-    </div>
-    <br><br>
-    <div> 
-        <label style="margin-left: 85px; font-size: x-large;" for="cour1"> Cources Applied For : </label>
-        <input  style="margin-left: 60px;" type="radio" name="course" value="BMS" id="python"> <label style="font-size: x-large;" for="python">&nbsp;&nbsp;BMS</label>
-        <input  style="margin-left: 20px;" type="radio" name="course" value="BCA" id="Oracle"> <label style="font-size: x-large;" for="Oracle">&nbsp;&nbsp;BCA</label>
-        <input  style="margin-left: 20px;" type="radio" name="course" value="B.sc" id="django"> <label style="font-size: x-large;" for="django">&nbsp;&nbsp;B.sc</label>
-        <input  style="margin-left: 20px;" type="radio" name="course" value="B.com" id="html"> <label style="font-size: x-large;" for="html">&nbsp;&nbsp;B.com</label>
+    </table>
     
-    
-    </div>
-    <br><br><br>
-    <div>
-        <center> <input style="font-size: x-large;" type="submit" value="Submit">
-                 <input style="font-size: x-large;" type="reset" value="Reset">
-        </center>
-    </div>
-    
-    </form>
-
-<pre> 
-
-
-
-
-
-
-
-
-</pre>
 </body>
 </html>
