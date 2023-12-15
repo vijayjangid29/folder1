@@ -1,0 +1,50 @@
+body{
+    background-color:white ;
+    box-sizing: content-box;
+}
+#img{
+
+    text-align: center;
+}
+#img2{
+    border-radius: 570px;
+}
+#name{
+    text-decoration: underline;
+    font-size: xx-large;
+    text-align: center;
+    color:teal;
+   /* background: radial-gradient(red,orange,pink,yellow,white,black,grey);*/
+}
+#btn{
+    text-align: center;
+    
+}
+input{
+    border-radius: 10px;
+    height: 30px;
+    width: 80px;
+    background-color:silver;
+}
+#text{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+h3{
+    display: inline;
+}
+
+table{
+    border-top: double;
+    border-bottom: double;
+    border-right: blank
+}
+#bot{
+    float:right;
+    margin-left: 1380px;
+    bottom: 3%;
+    position: fixed;
+    margin-right: px;
+}

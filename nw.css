@@ -1,0 +1,35 @@
+header {
+    margin-top: 0px;
+    background-color: cornflowerblue;
+}
+h1{
+    color: white;
+    display: inline;
+}
+#search{ 
+    display: inline;
+    height: 50px;
+    width: 400px;
+    margin-left:20px;
+    margin-right: 20px;
+}
+p{
+    margin-top: 0px;
+    display: inline;
+    font-size:x-large;
+    font:bold ;
+}
+#image>a{
+    margin-top:  20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.but{
+    display: inline;
+    width: 5px;
+    height: 2px;
+    
+}
+#col{
+    background-color: aqua;
+}
