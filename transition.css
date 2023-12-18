@@ -1,0 +1,40 @@
+.box1{
+    width: 350px;
+    height: 300px;
+    background: green;
+    margin: 200px;
+    margin-left: 600px;
+}
+#box{
+    width: 80px;
+    height: 80px;
+    background: #000;
+    animation-name: boxo;
+    animation-duration:3s;
+    animation-delay: 1s;
+    animation-direction:reverse;
+    animation-iteration-count:infinite ;
+}
+@keyframes boxo {
+0%{
+    transform: translate(0, 0);
+    background: white;
+}
+25%{
+    transform: translate(270px,0);
+    background: palegreen;
+}
+50%{
+transform: translate(270px,220px);
+background: teal;
+}
+75%{
+    background: indianred;
+transform: translate(0px,220px);
+}
+100%{
+    background-color:olive ;   
+
+}
+    
+}

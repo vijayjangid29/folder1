@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+ /*   margin: 10px;*/
+
+}
+.con{
+    border: 2px double firebrick;
+    display: grid;
+    width: 1000px;
+    height: 1000px;
+        gap: 10px;
+    
+}
+.box{
+
+    border: 1px solid green;
+
+   
+}
+#box1{
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-end:3 ;
+    grid-column-start: 1;
+}
+#box2{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+#box3{
+    justify-self: center;
+    width: 300px;
+    height: 200px;
+    align-self:center;
+}
